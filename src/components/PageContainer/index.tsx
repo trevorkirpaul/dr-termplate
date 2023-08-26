@@ -9,7 +9,7 @@ const PageContainer: React.FC<IProps> = ({ children }) => {
   return (
     <div className="flex flex-col h-screen justify-between">
       <Header />
-      <div className="p-5">{children}</div>
+      <div className="p-5 pt-14">{children}</div>
       <Footer />
     </div>
   );

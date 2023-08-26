@@ -29,7 +29,7 @@ const accordionSections = [
 const Home: React.FC = () => {
   return (
     <PageContainer>
-      <div className="mb-5 pt-14">
+      <div className="mb-5">
         <h1 className="text-xl mb-2">A Great Doctor's Office</h1>
         <p>
           Visit our doctor's office to get the latest and greatest in medical
