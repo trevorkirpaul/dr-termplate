@@ -7,7 +7,7 @@ interface IProps {
 }
 const PageContainer: React.FC<IProps> = ({ children }) => {
   return (
-    <div>
+    <div className="flex flex-col h-screen justify-between">
       <Header />
       <div className="p-5">{children}</div>
       <Footer />

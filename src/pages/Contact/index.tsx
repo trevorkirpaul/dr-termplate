@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "../../components/Header";
+import PageContainer from "../../components/PageContainer";
 
 const Contact: React.FC = () => {
   return (
-    <>
-      <Header />
+    <PageContainer>
       <h1 className="text-green-400">Contact</h1>
-    </>
+    </PageContainer>
   );
 };
 
