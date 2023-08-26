@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Menu, PharmacyCrossSquare } from "iconoir-react";
+import { Menu } from "iconoir-react";
 
 import MobileNavMenu from "../MobileNavMenu";
+import MainLogo from "../MainLogo";
 
 const Header: React.FC = () => {
   const [mobileNavMenuIsOpen, setMobileNavMenuIsOpen] = useState(false);
@@ -13,10 +14,7 @@ const Header: React.FC = () => {
         setMobileNavMenuIsOpen={setMobileNavMenuIsOpen}
       />
       <div className="flex justify-between p-3 bg-white fixed z-10 w-full">
-        <div className="flex">
-          <PharmacyCrossSquare className="mr-1" color="grey" />
-          <span>Dr. First Last, MD</span>
-        </div>
+        <MainLogo />
         <button
           className="cursor-pointer"
           onClick={() => setMobileNavMenuIsOpen(true)}
