@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         mobileNavMenuIsOpen={mobileNavMenuIsOpen}
         setMobileNavMenuIsOpen={setMobileNavMenuIsOpen}
       />
-      <div className="flex justify-between p-3 bg-blue-400 fixed z-10 w-full">
+      <div className="flex justify-between p-3 bg-white fixed z-10 w-full">
         <span>Dr. First Last, MD</span>
         <button
           className="cursor-pointer"
