@@ -1,12 +1,15 @@
 import React from "react";
-import Header from "../../components/Header";
+
+import Accordion from "../../components/Accordion";
+import PageContainer from "../../components/PageContainer";
+import { accordionSections } from "../../config/servicesData";
 
 const Services: React.FC = () => {
   return (
-    <>
-      <Header />
-      <h1>Services</h1>
-    </>
+    <PageContainer>
+      <h1 className="mb-5 flex text-xl">Services</h1>
+      <Accordion sections={accordionSections} />
+    </PageContainer>
   );
 };
 
