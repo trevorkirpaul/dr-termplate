@@ -1,6 +1,6 @@
 import React from "react";
 import { Dialog } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Cancel } from "iconoir-react";
 
 interface Props {
@@ -51,10 +51,10 @@ const MobileNavMenu: React.FC<Props> = ({
     <Dialog
       open={mobileNavMenuIsOpen}
       onClose={() => setMobileNavMenuIsOpen(false)}
-      className="fixed w-screen h-screen top-0 left-0 z-20"
+      className="fixed left-0 top-0 z-20 h-screen w-screen"
     >
-      <Dialog.Panel className="w-screen bg-gray-700 h-screen p-3 z-20">
-        <Dialog.Title className="text-white text-xl mb-5 flex justify-between">
+      <Dialog.Panel className="z-20 h-screen w-screen bg-gray-700 p-3">
+        <Dialog.Title className="mb-5 flex justify-between text-xl text-white">
           <div>{title}</div>
           <div>
             <button
@@ -68,9 +68,16 @@ const MobileNavMenu: React.FC<Props> = ({
         <ul className="text-white">
           {routes.map((r) => (
             <li key={r.path}>
-              <Link to={r.path} className={linkClassName}>
+              <NavLink
+                to={r.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? linkClassName + " font-bold text-blue-400 underline"
+                    : linkClassName
+                }
+              >
                 {r.label}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
