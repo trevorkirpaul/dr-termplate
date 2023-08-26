@@ -30,16 +30,16 @@ const Home: React.FC = () => {
   return (
     <PageContainer>
       <div className="mb-5">
-        <h1 className="text-xl mb-2">A Great Doctor's Office</h1>
+        <h1 className="mb-2 text-xl">A Great Doctor's Office</h1>
         <p>
           Visit our doctor's office to get the latest and greatest in medical
           treatment!
         </p>
       </div>
-      <div className="mb-5 bg-yellow-200 rounded h-20 flex justify-center items-center">
+      <div className="mb-5 flex h-20 items-center justify-center rounded bg-yellow-200">
         <a
           href="tel:123-456-7890"
-          className="hover:underline text-xl font-bold"
+          className="text-xl font-bold hover:underline"
         >
           (123) 456-7890
         </a>

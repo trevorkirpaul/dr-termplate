@@ -41,8 +41,8 @@ const Contact: React.FC = () => {
 
   return (
     <PageContainer>
-      <h1 className="text-xl mb-5 flex">
-        <Mail className="inline mr-2" /> Contact
+      <h1 className="mb-5 flex text-xl">
+        <Mail className="mr-2 inline" /> Contact
       </h1>
       <p className="mb-5">
         Got questions or need to schedule an appointment? We're here to help.

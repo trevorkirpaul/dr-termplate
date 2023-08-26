@@ -52,7 +52,7 @@ const Form: React.FC<IProps> = ({ onSubmit, formOptions }) => {
             />
           )}
           {errors?.[fo.name] && (
-            <span className="text-red-500 block my-2 flex">
+            <span className="my-2 block flex text-red-500">
               <Cancel className="inline" /> {errors[fo.name]?.message}
             </span>
           )}
@@ -61,7 +61,7 @@ const Form: React.FC<IProps> = ({ onSubmit, formOptions }) => {
 
       <input
         type="submit"
-        className="bg-blue-400 px-3 py-2 rounded cursor-pointer"
+        className="cursor-pointer rounded bg-blue-400 px-3 py-2"
       />
     </form>
   );
