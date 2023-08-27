@@ -4,12 +4,21 @@ import Footer from "../Footer";
 
 interface IProps {
   children?: React.ReactNode;
+  addPadding?: boolean;
 }
-const PageContainer: React.FC<IProps> = ({ children }) => {
+
+const getChildrenWrapperClassName = (addPadding?: boolean) => {
+  if (addPadding) {
+    return "p-5 pt-14";
+  }
+  return "pt-14";
+};
+
+const PageContainer: React.FC<IProps> = ({ children, addPadding }) => {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex h-screen flex-col justify-between">
       <Header />
-      <div className="p-5 pt-14">{children}</div>
+      <div className={getChildrenWrapperClassName(addPadding)}>{children}</div>
       <Footer />
     </div>
   );
