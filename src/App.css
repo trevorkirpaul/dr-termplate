@@ -1,6 +1,7 @@
 body {
   /* padding: 1rem; */
   background-color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 .google-maps {
@@ -16,4 +17,10 @@ body {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+.hero-splash {
+  background-image: url("./assets/images/hero-splash.jpg");
+  background-size: cover;
+  height: 70vh;
 }

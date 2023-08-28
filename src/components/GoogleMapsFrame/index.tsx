@@ -9,7 +9,7 @@ interface IProps {
 
 const GoogleMapsFrame: React.FC<IProps> = ({ src = defaultSrc }) => {
   return (
-    <div className="rounded google-maps mb-5">
+    <div className="google-maps rounded">
       <iframe
         src={src}
         loading="lazy"
